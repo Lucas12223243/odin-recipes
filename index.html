@@ -4,15 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffcc00, #66ff66); /* Yellow-green gradient */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #444;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .recipe-button {
+            text-decoration: none;
+            background-color: #ff4444; /* Red */
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+        }
+
+        .recipe-button:hover {
+            background-color: #cc0000; /* Darker red */
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <p></p>
-   <ul> 
-    <li><a href="Recipes/Lasagne.html">Lasagne</a></li>
-    <li><a href="Recipes/Brownie.html">Brownie</a></li>
-    <li><a href="Recipes/Pad-thai.html">Pad-thai</a></li>
 
-</ul>
+    <h1>Odin Recipes</h1>
+
+    <div class="button-container">
+        <a href="Recipes/Lasagne.html" class="recipe-button">Lasagne</a>
+        <a href="Recipes/Brownie.html" class="recipe-button">Brownie</a>
+        <a href="Recipes/Pad-thai.html" class="recipe-button">Pad Thai</a>
+    </div>
+
 </body>
 </html>
