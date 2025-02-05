@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Page</title>
+    <title>Lasagne Recipe</title>
     <style>
-        /* Reset some default styles */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -13,84 +13,84 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffcc00, #66ff66); /* Warm yellow-green gradient */
             color: #333;
             line-height: 1.6;
+            text-align: center;
+            padding-bottom: 60px;
         }
 
         header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
+            background-color: #8B0000; /* Deep red */
             color: white;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
         }
 
-        header h1 {
-            font-size: 3em;
-            margin: 0;
+        .content {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         img {
             width: 100%;
             max-width: 500px;
-            display: block;
-            margin: 20px auto;
             border-radius: 8px;
-        }
-
-        .content {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 20px 0;
         }
 
         h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-
-        ul, ol {
-            margin-left: 20px;
-            line-height: 1.8;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            background-color: #f9a825;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        a:hover {
-            background-color: #ffca28;
-        }
-
-        .back-link {
-            display: inline-block;
+            color: #8B0000; /* Deep red */
             margin-top: 20px;
         }
 
-        .links {
-            text-align: center;
-            margin-top: 30px;
+        ul, ol {
+            text-align: left;
+            margin: 15px auto;
+            padding: 0 20px;
+            line-height: 1.8;
         }
 
-        .links a {
-            margin: 0 10px;
+        /* Buttons */
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin: 15px;
+        }
+
+        .back-button {
+            background-color: #cc5500; /* Warm brown */
+        }
+
+        .back-button:hover {
+            background-color: #aa4400;
+        }
+
+        .original-recipe {
+            background-color: #228B22; /* Deep green */
+        }
+
+        .original-recipe:hover {
+            background-color: #1a6d1a;
         }
 
         footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #333;
+            background-color: #8B0000;
             color: white;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -98,7 +98,7 @@
 
         @media (max-width: 768px) {
             .content {
-                width: 90%;
+                width: 95%;
             }
         }
     </style>
@@ -106,53 +106,50 @@
 <body>
 
 <header>
-    <h1>Lasagne Recipe</h1>
+    Lasagne Recipe
 </header>
 
 <div class="content">
     <img src="Lasagna.jpg" alt="Lasagna">
-    
-    <a href="../index.html" class="back-link">Back to Home</a>
 
-    <p>This easy lasagna recipe is perfect for a family dinner when you’re running low on time but still want something delicious!</p>
+    <a href="../index.html" class="button back-button">⬅ Back to Home</a>
+
+    <p><strong>This easy lasagna recipe is perfect for a delicious homemade meal!</strong></p>
 
     <h2>Ingredients</h2>
     <ul>
-        <li><strong>1 pound</strong> ground beef</li>
-        <li><strong>2 tablespoons</strong> vegetable oil</li>
-        <li><strong>2 (14-ounce)</strong> canned chopped tomatoes</li>
-        <li><strong>2 (6-ounce)</strong> cans tomato paste</li>
-        <li><strong>1 teaspoon</strong> salt</li>
-        <li><strong>2 teaspoons</strong> Italian seasoning</li>
-        <li><strong>¼ teaspoon</strong> freshly ground black pepper</li>
-        <li><strong>¼ teaspoon</strong> crushed red pepper flakes</li>
-        <li><strong>¼ teaspoon</strong> garlic powder</li>
-        <li><strong>1 (8-ounce)</strong> package no-boil lasagna noodles</li>
-        <li><strong>1 cup</strong> shredded mozzarella cheese</li>
-        <li><strong>1 cup</strong> ricotta or small curd cottage cheese</li>
-        <li><strong>¼ cup</strong> grated Parmesan cheese</li>
-        <li><strong>6 slices</strong> fresh mozzarella cheese</li>
-        <li>Chopped parsley, for garnish</li>
+        <li>1 pound ground beef</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>2 (14oz) cans chopped tomatoes</li>
+        <li>2 (6oz) cans tomato paste</li>
+        <li>1 tsp salt</li>
+        <li>2 tsp Italian seasoning</li>
+        <li>¼ tsp black pepper</li>
+        <li>¼ tsp red pepper flakes</li>
+        <li>¼ tsp garlic powder</li>
+        <li>8oz no-boil lasagna noodles</li>
+        <li>1 cup shredded mozzarella cheese</li>
+        <li>1 cup ricotta or cottage cheese</li>
+        <li>¼ cup grated Parmesan cheese</li>
+        <li>6 slices fresh mozzarella cheese</li>
+        <li>Chopped parsley for garnish</li>
     </ul>
 
     <h2>Directions</h2>
     <ol>
-        <li>Preheat the oven to <strong>350°F</strong>.</li>
-        <li>Heat the oil in a large skillet over medium heat. Cook the <strong>ground beef</strong>, stirring to crumble, until browned, 5 to 7 minutes. Drain off the fat.</li>
-        <li>To the skillet of <strong>ground beef</strong>, add the <strong>tomatoes</strong>, <strong>tomato paste</strong>, <strong>Italian seasoning</strong>, <strong>salt</strong>, <strong>black pepper</strong>, <strong>red pepper flakes</strong>, and <strong>garlic powder</strong>. Simmer for 5 minutes.</li>
-        <li>Place half of <strong>noodles</strong> in a lightly greased 12- x 8- x 2-inch baking dish, slightly overlapping lengthwise edges. Spoon one-third of the <strong>meat mixture</strong> over the noodles; add half of the shredded <strong>mozzarella</strong>, <strong>ricotta</strong> or small curd <strong>cottage cheese</strong>, and <strong>Parmesan cheeses</strong>. Repeat layers, and spoon on the remaining <strong>meat mixture</strong>. Arrange the <strong>mozzarella slices</strong> on top.</li>
-        <li>Cover the baking dish with foil. Bake at 350°F for 35 to 45 minutes. Remove the foil, and continue to bake for an additional 10 minutes.</li>
-        <li>Let the finished dish rest for 10 minutes before serving. Top with <strong>chopped parsley</strong>, if desired.</li>
+        <li>Preheat oven to 350°F.</li>
+        <li>Heat oil in a skillet, cook ground beef until browned, drain fat.</li>
+        <li>Add tomatoes, tomato paste, seasonings, and simmer for 5 minutes.</li>
+        <li>Layer noodles, meat sauce, and cheeses in a baking dish.</li>
+        <li>Cover with foil and bake for 35-45 minutes. Remove foil and bake 10 more minutes.</li>
+        <li>Let it rest for 10 minutes before serving. Garnish with parsley.</li>
     </ol>
 
-    <div class="links">
-        <!-- Link to the original website -->
-        <a href="https://www.southernliving.com/recipes/extra-easy-lasagna" target="_blank">Original Recipe</a>
-    </div>
+    <a href="https://www.southernliving.com/recipes/extra-easy-lasagna" target="_blank" class="button original-recipe">📖 View Original Recipe</a>
 </div>
 
 <footer>
-    <p>&copy; 2025 Recipe Website</p>
+    &copy; 2025 Recipe Website
 </footer>
 
 </body>
